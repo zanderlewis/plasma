@@ -5,7 +5,7 @@ This package contains all the command modules organized by category.
 Each category has its own subdirectory with individual command files.
 """
 
-from . import env, file, git, help, ip, project, server
+from plsma.commands import env, file, git, help, ip, project, server
 
 
 def register_all_commands():
@@ -20,12 +20,5 @@ def register_all_commands():
 
 
 __all__ = [
-    "env",
-    "file",
-    "git",
-    "server",
-    "ip",
-    "project",
-    "help",
     "register_all_commands",
 ]
