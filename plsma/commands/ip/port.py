@@ -70,12 +70,15 @@ class PortCommand(BaseCommand):
         """Show automatic help for port command"""
         actions = [
             {"name": "<port>", "description": "Port number to check (1-65535)"},
-            {"name": "<port> <host>", "description": "Check port on specific host (default: localhost)"},
+            {
+                "name": "<port> <host>",
+                "description": "Check port on specific host (default: localhost)",
+            },
         ]
         self.show_automatic_help(
             "ip:port <port> [host]",
             actions,
-            "Check if a port is open on localhost or specified host"
+            "Check if a port is open on localhost or specified host",
         )
 
 

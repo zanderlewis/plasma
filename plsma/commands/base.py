@@ -53,7 +53,9 @@ class BaseCommand:
         """Print a warning message"""
         console.print(f"[yellow][WARNING][/yellow] {message}")
 
-    def show_automatic_help(self, command_usage: str, actions: list[dict], description: str = ""):
+    def show_automatic_help(
+        self, command_usage: str, actions: list[dict], description: str = ""
+    ):
         """Show automatic help based on command actions"""
         # Create help content
         title = Text(f"Help: {command_usage.split()[0]}", style="bold blue")
@@ -69,9 +71,9 @@ class BaseCommand:
         if actions:
             content.append("Available Actions:\n", style="bold")
             for action in actions:
-                action_name = action.get('name', '')
-                action_desc = action.get('description', '')
-                action_args = action.get('args', '')
+                action_name = action.get("name", "")
+                action_desc = action.get("description", "")
+                action_args = action.get("args", "")
 
                 if action_args:
                     content.append(f"  {action_name} {action_args}", style="cyan")

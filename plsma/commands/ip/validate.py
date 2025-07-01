@@ -67,7 +67,7 @@ class ValidateCommand(BaseCommand):
         self.show_automatic_help(
             "ip:validate <ip_address>",
             actions,
-            "Validate if a string is a valid IP address (IPv4 or IPv6)"
+            "Validate if a string is a valid IP address (IPv4 or IPv6)",
         )
 
 

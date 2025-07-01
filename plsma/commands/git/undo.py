@@ -42,7 +42,9 @@ class UndoCommand(BaseCommand):
 
         if num_commits == 1:
             self.warning("This is the only commit in the repository")
-            if self.ask_confirmation("Delete the entire commit history and keep files?"):
+            if self.ask_confirmation(
+                "Delete the entire commit history and keep files?"
+            ):
                 # For the first commit, we need to delete the .git/refs/heads/main file
                 # and reset to an empty repository state
                 result = self._run_command("git update-ref -d HEAD")

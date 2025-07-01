@@ -73,7 +73,7 @@ class KillCommand(BaseCommand):
         self.show_automatic_help(
             "server:kill <port>",
             actions,
-            "Kill processes running on the specified port"
+            "Kill processes running on the specified port",
         )
 
 

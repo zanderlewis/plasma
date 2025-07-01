@@ -52,12 +52,15 @@ class SubnetCommand(BaseCommand):
     def _show_automatic_help(self):
         """Show automatic help for subnet command"""
         actions = [
-            {"name": "<ip/cidr>", "description": "IP address with CIDR notation (e.g., 192.168.1.0/24)"},
+            {
+                "name": "<ip/cidr>",
+                "description": "IP address with CIDR notation (e.g., 192.168.1.0/24)",
+            },
         ]
         self.show_automatic_help(
             "ip:subnet <ip/cidr>",
             actions,
-            "Get detailed subnet information for an IP/CIDR block"
+            "Get detailed subnet information for an IP/CIDR block",
         )
 
 

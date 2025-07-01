@@ -91,12 +91,15 @@ class BackupCommand(BaseCommand):
         """Show automatic help for backup command"""
         actions = [
             {"name": "<source_directory>", "description": "Directory to backup"},
-            {"name": "<source_directory> <backup_name>", "description": "Directory to backup with custom name"},
+            {
+                "name": "<source_directory> <backup_name>",
+                "description": "Directory to backup with custom name",
+            },
         ]
         self.show_automatic_help(
             "file:backup <source_directory> [backup_name]",
             actions,
-            "Create a timestamped backup of a directory"
+            "Create a timestamped backup of a directory",
         )
 
 

@@ -132,12 +132,15 @@ class FindCommand(BaseCommand):
     def _show_automatic_help(self):
         """Show automatic help for find command"""
         actions = [
-            {"name": "<name_or_port>", "description": "Process name or port number to search for"},
+            {
+                "name": "<name_or_port>",
+                "description": "Process name or port number to search for",
+            },
         ]
         self.show_automatic_help(
             "server:find <name_or_port>",
             actions,
-            "Find processes by name or port number"
+            "Find processes by name or port number",
         )
 
 

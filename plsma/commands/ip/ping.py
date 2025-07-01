@@ -42,12 +42,15 @@ class PingCommand(BaseCommand):
         """Show automatic help for ping command"""
         actions = [
             {"name": "<host>", "description": "Host to ping (IP address or hostname)"},
-            {"name": "<host> <count>", "description": "Host to ping with custom packet count"},
+            {
+                "name": "<host> <count>",
+                "description": "Host to ping with custom packet count",
+            },
         ]
         self.show_automatic_help(
             "ip:ping <host> [count]",
             actions,
-            "Ping a host with configurable packet count"
+            "Ping a host with configurable packet count",
         )
 
 
