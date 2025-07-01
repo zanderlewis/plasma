@@ -5,7 +5,7 @@ from .gpl import GPL_LICENSE
 from .mit import MIT_LICENSE
 from .unlicense import UNLICENSE
 
-__all__ = ["MIT_LICENSE", "APACHE_LICENSE", "GPL_LICENSE", "UNLICENSE"]
+__all__ = ["APACHE_LICENSE", "GPL_LICENSE", "MIT_LICENSE", "UNLICENSE"]
 
 LICENSES = [
     {"name": "MIT License", "identifier": "mit", "content": MIT_LICENSE},

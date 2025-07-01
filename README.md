@@ -12,7 +12,7 @@ uv add plsma
 
 Or clone and install locally:
 ```bash
-git clone https://github.com/zanderlewis/devtools.git
+git clone https://github.com/zanderlewis/plasma.git
 cd plsma
 uv install -e .
 ```

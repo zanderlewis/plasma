@@ -19,7 +19,7 @@ class ListCommand(BaseCommand):
     """List local IP addresses"""
 
     def execute(self, _):
-        """Get local IP addresses (100% local, no external calls)"""
+        """Get local IP addresses"""
         table = Table(title="Local IP Addresses")
         table.add_column("Interface", style="cyan")
         table.add_column("IP Address", style="green")

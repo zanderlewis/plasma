@@ -1,5 +1,5 @@
 """
-Base command class for DevTools commands
+Base command class for Plasma commands
 """
 
 import subprocess
@@ -15,7 +15,7 @@ TOOL_COMMAND = "plasma"
 
 
 class BaseCommand:
-    """Base class for all DevTools commands"""
+    """Base class for all Plasma commands"""
 
     def __init__(self):
         self.name: str = ""

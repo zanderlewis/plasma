@@ -1,5 +1,5 @@
 """
-DevTools CLI - Main entry point for the development toolkit
+Plasma CLI - Main entry point for the development toolkit
 """
 
 import sys
@@ -15,12 +15,12 @@ from plsma.utils import get_version
 console = Console()
 
 # Configuration constants for dynamic usage
-TOOL_NAME = "devtools"
+TOOL_NAME = "plasma"
 TOOL_COMMAND = "plasma"
 TOOL_VERSION = get_version()
 
 
-class DevToolsCLI:
+class PlasmaCLI:
     """Main CLI class that handles command registration and execution"""
 
     def __init__(self):
@@ -120,7 +120,7 @@ def main(command: str | None, args: tuple, version: bool):
         console.print(f"{TOOL_NAME} version {TOOL_VERSION}")
         return
 
-    cli = DevToolsCLI()
+    cli = PlasmaCLI()
 
     if not command or command == "list":
         cli.list_commands()

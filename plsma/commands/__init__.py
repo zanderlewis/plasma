@@ -1,5 +1,5 @@
 """
-Commands package for DevTools
+Commands package for Plasma
 
 This package contains all the command modules organized by category.
 Each category has its own subdirectory with individual command files.

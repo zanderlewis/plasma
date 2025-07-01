@@ -34,3 +34,4 @@ venv.bak/
 
 # Linting and formatting
 .ruff_cache/
+*.backup

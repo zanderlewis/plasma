@@ -1,5 +1,5 @@
 """
-Help command implementation - Stylistic help display
+Help command implementation
 """
 
 from rich.console import Console
@@ -14,7 +14,7 @@ console = Console()
 
 
 class HelpCommand(BaseCommand):
-    """Stylistic help command for DevTools"""
+    """Stylistic help command for Plasma"""
 
     def __init__(self):
         super().__init__()
@@ -36,7 +36,7 @@ class HelpCommand(BaseCommand):
     def _show_general_help(self):
         """Display general help with all commands"""
         # Create header
-        title = Text("DevTools Help", style="bold blue")
+        title = Text("Plasma Help", style="bold blue")
         subtitle = Text("A powerful development toolkit", style="italic")
 
         header_content = Text()

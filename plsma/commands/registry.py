@@ -1,5 +1,5 @@
 """
-Command registry system for DevTools
+Command registry system for Plasma
 """
 
 from collections.abc import Callable
@@ -18,7 +18,7 @@ class CommandInfo:
 
 
 class CommandRegistry:
-    """Central registry for all DevTools commands"""
+    """Central registry for all Plasma commands"""
 
     def __init__(self):
         self._commands: dict[str, CommandInfo] = {}

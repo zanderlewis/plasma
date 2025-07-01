@@ -1,6 +1,6 @@
 [project]
 name = "plsma"
-version = "0.1.0"
+version = "0.1.1"
 description = "A developer's toolkit for managing and automating development tasks."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -30,16 +30,18 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = [
-    "E",   # pycodestyle errors
-    "W",   # pycodestyle warnings
-    "F",   # Pyflakes
-    "I",   # isort
-    "B",   # flake8-bugbear
-    "C4",  # flake8-comprehensions
-    "UP",  # pyupgrade
-    "PL",  # pylint
-    "ICN", # Import conventions
-    "N",   # PEP 8 naming conventions
+    "E",     # pycodestyle errors
+    "W",     # pycodestyle warnings
+    "F",     # Pyflakes
+    "I",     # isort
+    "B",     # flake8-bugbear
+    "C4",    # flake8-comprehensions
+    "UP",    # pyupgrade
+    "PL",    # pylint
+    "ICN",   # Import conventions
+    "N",     # PEP 8 naming conventions
+    "RUF",   # Ruff specific rules
+    "TC",    # flake8-type-checking
 ]
 ignore = [
     "E501",  # Line too long

@@ -10,7 +10,7 @@ class PingCommand(BaseCommand):
     """Ping utilities"""
 
     def execute(self, args):
-        """Ping a host (local network utility)"""
+        """Ping a host"""
         if not args:
             self.error("Host required")
             self._show_automatic_help()
